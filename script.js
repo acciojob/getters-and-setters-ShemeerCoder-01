@@ -13,18 +13,29 @@ class Person {
 }
 
 class Student extends Person {
-	super();
+    constructor(name){
+        super(name);
+    }
 	study(){
 		console.log(this.name,"is studying");
 	}
 }
 
 class Teacher extends Person {
-	super();
+    constructor(name){
+        super(name);
+    }
+    
 	teach(){
 		console.log(this.name,"is teaching");
 	}
 }
+let person1 = new Person("shemeer",24);
+person1.setter(25);
+let student1 = new Student("Swathi");
+student1.study();
+let teacher1 = new Teacher("Avi");
+teacher1.teach();
 
 // Do not change the code below this line
 window.Person = Person;
