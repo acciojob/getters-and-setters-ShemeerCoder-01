@@ -57,12 +57,7 @@ class Teacher extends Person {
   }
 }
 
-let person1 = new Person("shemeer",24);
-person1.age = 27;
-// let student1 = new Student("John",30);
-person1.study();
-// let teacher1 = new Teacher("Alice",30);
-person1.teach();
+
 
 // Do not change the code below this line
 window.Person = Person;
