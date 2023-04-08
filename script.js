@@ -17,7 +17,7 @@ class Student extends Person {
         super(name);
     }
 	study(){
-		console.log(this.name,"is studying");
+		console.log(this.name+" is studying");
 	}
 }
 
@@ -27,14 +27,14 @@ class Teacher extends Person {
     }
     
 	teach(){
-		console.log(this.name,"is teaching");
+		console.log(this.name+" is teaching");
 	}
 }
 let person1 = new Person("shemeer",24);
-person1.setter(25);
-let student1 = new Student("Swathi");
+person1.age = 27;
+let student1 = new Student("John");
 student1.study();
-let teacher1 = new Teacher("Avi");
+let teacher1 = new Teacher("Alice");
 teacher1.teach();
 
 // Do not change the code below this line
